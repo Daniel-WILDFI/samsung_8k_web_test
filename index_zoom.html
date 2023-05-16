@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>EL MARISCAL Y LA PRIMERA EN CASA</title>
+  <link rel="stylesheet" href="./style_zoom.css">
+  <!-- CSS Plugins -->
+  <link rel="stylesheet" href="assets/css/plugins.min.css">
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+ <header class="ms-header navbar-white">
+  <nav class="ms-nav">
+    <div class="ms-logo">
+      <a href="index.html" data-type="page-transition">
+        <div class="logo-dark"><img src="logo-dark.svg" alt="logo image"></div>
+        <div class="logo-light current"><img src="assets/images/Logo_samsung.svg" style="" alt="logo image"></div>
+      </a>
+    </div>
+    <button class="hamburger" type="button" data-toggle="navigation">
+    <span class="hamburger-box">
+      <span class="hamburger-label">menu</span>
+      <span class="hamburger-inner"></span>
+    </span>
+    </button>
+    <div class="height-full-viewport">
+      <ul class="ms-navbar">
+        <!-- Nav Link -->
+        <li class="nav-item">
+          <a href="index.html" data-type="page-transition">
+            <span class="ms-btn">INICIO</span>
+            <span class="nav-item__label">Back to home page</span>
+          </a>
+        </li>
+        <!-- Nav Link -->
+        <li class="nav-item">
+          <a href="albums.html" data-type="page-transition">
+            <span class="ms-btn">albums</span>
+            <span class="nav-item__label">View all our works</span>
+          </a>
+        </li>
+        <!-- Nav Link -->
+        <li class="nav-item">
+          <a href="gallery.html" data-type="page-transition">
+            <span class="ms-btn">gallery</span>
+            <span class="nav-item__label">Interactively disintermediate</span>
+          </a>
+        </li>
+        <!-- Nav Link -->
+        <li class="nav-item">
+          <a href="blog.html" data-type="page-transition">
+            <span class="ms-btn">blog</span>
+            <span class="nav-item__label">Discover fascinating stories</span>
+          </a>
+        </li>
+        <!-- Nav Link -->
+        <li class="nav-item">
+          <a href="about.html" data-type="page-transition">
+            <span class="ms-btn">about</span>
+            <span class="nav-item__label">Learn more about the author</span>
+          </a>
+        </li>
+        <!-- Nav Link -->
+        <li class="nav-item">
+          <a href="contact.html" data-type="page-transition">
+            <span class="ms-btn">contact</span>
+            <span class="nav-item__label">Get in touch and find us</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header> 
+<!-- partial:index.partial.html -->
+<div id="root"></div> 
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js'></script>
+      
+   
+     
+      
+      
+      
+<script id="rendered-js" >
+function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // A part of my effort to learn parallax.
+// Photo Cred: Andre Benz @ https://unsplash.com/@trapnation
+
+class App extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "handleMouseMove",
+    e => {
+      const el = document.getElementById("wrapper");
+      const d = el.getBoundingClientRect();
+      let x = e.clientX - (d.left + Math.floor(d.width / 3));
+      let y = e.clientY - (d.top + Math.floor(d.height / 3));
+      // Invert values
+      x = x - x * 3;
+      y = y - y * 3;
+      document.documentElement.style.setProperty("--scale", 3.5);
+      document.documentElement.style.setProperty("--x", x / 1 + "px");
+
+      document.documentElement.style.setProperty("--y", y / 1 + "px");
+    });_defineProperty(this, "handleMouseLeave",
+
+    () => {
+      document.documentElement.style.setProperty("--scale", 1);
+      document.documentElement.style.setProperty("--x", 0);
+      document.documentElement.style.setProperty("--y", 0);
+    });}
+  render() {
+    return /*#__PURE__*/(
+      React.createElement("div", {
+        id: "wrapper",
+        onMouseMove: this.handleMouseMove,
+        onClick: this.handleMouseLeave }, /*#__PURE__*/
+
+      React.createElement("img", { id: "image" })));
+
+
+  }}
+
+
+ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("root"));
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+<!-- partial -->
+ <!-- JS Libraries -->
+    <!-- jquery-2.1.3.min js -->
+    <script type="text/javascript" src='assets/js/jquery-3.2.1.min.js'></script>
+    <!-- Vendors -->
+    <script type="text/javascript" src='assets/js/plugins.min.js'></script>
+    <!-- Main js -->
+    <script type="text/javascript" src="assets/js/main.js"></script> 
+</body>
+</html>
