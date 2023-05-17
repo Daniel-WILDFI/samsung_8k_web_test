@@ -95,15 +95,15 @@ class App extends React.Component {constructor(...args) {super(...args);_defineP
     e => {
       const el = document.getElementById("wrapper");
       const d = el.getBoundingClientRect();
-      let x = e.clientX - (d.left + Math.floor(d.width / 3));
-      let y = e.clientY - (d.top + Math.floor(d.height / 3));
+      let x = e.clientX - (d.left + Math.floor(d.width / 2));
+      let y = e.clientY - (d.top + Math.floor(d.height / 2));
       // Invert values
-      x = x - x * 3;
-      y = y - y * 3;
+      x = x - x * 25;
+      y = y - y * 25;
       document.documentElement.style.setProperty("--scale", 3.5);
-      document.documentElement.style.setProperty("--x", x / 1 + "px");
+      document.documentElement.style.setProperty("--x", x / 10 + "px");
 
-      document.documentElement.style.setProperty("--y", y / 1 + "px");
+      document.documentElement.style.setProperty("--y", y / 10 + "px");
     });_defineProperty(this, "handleMouseLeave",
 
     () => {
@@ -126,6 +126,7 @@ class App extends React.Component {constructor(...args) {super(...args);_defineP
 
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("root"));
 //# sourceURL=pen.js
+    
     </script>
 
   
