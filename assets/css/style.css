@@ -633,6 +633,8 @@ p {
     transform: scale(1);
 }
 
+
+
 /* 4.1 Slider navigation buttons */
 
 .swiper-button-prev,
@@ -1321,26 +1323,29 @@ footer {
     .ms-footer .socials {
         display: none;
     }
-    
-    .video-docker video {
-        margin-top: 25%;
-        width: 155%;
-        transform: translate(-17%, 0%);
+    .ms-logo img {
+        width: auto;
+        height: 60%;
+        margin: 10px 0px 0px 25px;
+    }
+   
+
+    .video-docker-mobile video {
+        margin-top: 20%;
+        width: 100%;
+        
+        
       }
-      .video-docker::after {
+      .video-docker-mobile {
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.6);
+        background: #000;
         z-index: 1;
       }
 
-      .ms-logo img {
-        width: auto;
-        height: 60%;
-        margin: 10px 0px 0px 25px;
-    }
+    
 }
