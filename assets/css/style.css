@@ -38,7 +38,7 @@ section {
     display: block;
 }
 a {
-    color: #0e064e;
+    color: #FFF;
     text-decoration: none;
 }
 blockquote {
@@ -113,9 +113,10 @@ h6 {
     text-transform: uppercase;
 }
 h1 {
-    font-size: calc(80px + 1vw);
+    font-size: calc(50px + 1vw);
 }
 h2 {
+    color: #fff;
     font-size: calc(36px + 16 * (100vw - 992px) / 1508);
 }
 h3 {
@@ -227,7 +228,7 @@ p {
     bottom: 0;
 }
 .ms-button:hover {
-  color: #0e064e;
+  color: #555;
 }
 .ms-button:active::after,
 .ms-button:focus::after,
@@ -251,7 +252,7 @@ p {
     height: .1rem;
     width: 2rem;
     margin-right: .7rem;
-    background: #0e064e;
+    background: #FFF;
     transition: width .3s ease;
 }
 .ms-btn--slider:hover::before {
@@ -285,8 +286,8 @@ p {
 }
 .ms-logo img {
     width: auto;
-    height: 70%;
-    margin-top: 8px;
+    height: 60%;
+    margin: 10px 0px 0px 0PX;
 }
 .logo-dark.current,
 .logo-light.current {
@@ -412,7 +413,7 @@ p {
     overflow-y: auto;
     left: 0;
     top: 0;
-    width: 15%;
+    width: 26vh;
     height: 0%;
     background-color: #151515;
     z-index: 5;
@@ -430,6 +431,7 @@ p {
 }
 .ms-nav.is-visible .height-full-viewport {
     height: 50vh;
+    width: 26vh;
     transition: height 1s ease;
 }
 .nav-item {
@@ -1335,4 +1337,10 @@ footer {
         background: rgba(0, 0, 0, 0.6);
         z-index: 1;
       }
+
+      .ms-logo img {
+        width: auto;
+        height: 60%;
+        margin: 10px 0px 0px 25px;
+    }
 }
