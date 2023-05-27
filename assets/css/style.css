@@ -38,7 +38,7 @@ section {
     display: block;
 }
 a {
-    color: #FFF;
+    color: #000;
     text-decoration: none;
 }
 blockquote {
@@ -243,6 +243,7 @@ p {
   position: relative;
   display: flex;
   align-items: center;
+  margin-top: 1rem;
   width: 20em;
   font-weight: 600;
   letter-spacing: .15em;
@@ -252,7 +253,8 @@ p {
     height: .1rem;
     width: 2rem;
     margin-right: .7rem;
-    background: #FFF;
+    margin-top: .7rem;
+    background: #000;
     transition: width .3s ease;
 }
 .ms-btn--slider:hover::before {
@@ -300,7 +302,7 @@ p {
     transition: opacity .1s;
 }
 .ms-nav {
-    padding: 2em 3em;
+    padding: 1em 3em;
     color: inherit;
 }
 
@@ -705,10 +707,10 @@ p {
 
 .slide-inner--info {
     position: absolute;
-    width: auto;
+    width: 25%;
     min-height: 50px;
     bottom: 3em;
-    padding-left: 3em;
+    padding-left: 2em;
     color: #fff;
     z-index: 1;
     opacity: 0;
@@ -717,7 +719,7 @@ p {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}   
+}  
 .swiper-slide-active .slide-inner--info {
     opacity: 1;
     transition: opacity 1s ease 1s;
