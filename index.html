@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/plugins.min.css">
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom POPUP CSS File -->
+    <link rel="stylesheet" href="assets/css/popup_style.css">
 
     <style>
       @font-face {
@@ -81,9 +83,27 @@
                 <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
                   <video class="min-w-full min-h-full absolute object-cover" src="assets/images/home-slider/hero_1.mp4" type="video/mp4" autoplay muted loop></video>
               </div>
+              <div class="video-docker-mobile absolute top-0 left-0 w-full h-full overflow-hidden">
+                <video class="min-w-full min-h-full absolute object-cover" src="assets/images/home-slider/hero_1_mobile.mp4" type="video/mp4" autoplay muted loop></video>
+            </div>
                 <div class="slide-inner--info">
-                  <h1></h1>
-                  
+                  <div class="page">
+                    <div class="page__container">
+                      <a href="#popup-article" class="open-popup">MÁS INFO</a>
+                    </div>
+                  </div>
+                  <div id="popup-article" class="popup">
+                    <div class="popup__container">
+                      <a href="#" class="popup__close">
+                        <span class="screen-reader">close</span>
+                      </a>  
+                      <div class="popup__content">
+                        <h1 class="popup__title r-title">The my adventure in the France and photography with Tour De France</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque optio vitae in explicabo recusandae sit id sapiente excepturi tempore, nemo, nulla odio deleniti rerum nisi perferendis aut molestias! Incidunt nesciunt iusto praesentium! In at maiores quibusdam enim quis, quam!</p>
+                        <p>Architecto magni dolores cumque tenetur nemo id aperiam, ratione temporibus at, consectetur totam, fuga et illo rerum earum dicta. Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex accusantium architecto doloremque reprehenderit, asperiores vero dolor, esse inventore dolorem.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>    
