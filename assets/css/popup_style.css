@@ -41,6 +41,40 @@ POPUP
 =====
 */
 
+/*Text font*/
+@font-face {
+  font-family: 'Samsung Sharp Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Samsung Sharp Sans Regular'), url('assets/fonts/samsungsharpsans.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Samsung Sharp Sans Medium';
+  font-style: medium;
+  font-weight: medium;
+  src: local('Samsung Sharp Sans Medium'), url('assets/fonts/samsungsharpsans-medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Samsung Sharp Sans Bold';
+  font-style: bold;
+  font-weight: bold;
+  src: local('Samsung Sharp Sans Bold'), url('assets/fonts/samsungsharpsans-bold.woff') format('woff');
+  }
+
+  .harlow_regular {
+
+      font-family: 'Samsung Sharp Sans Regular'; 
+  }
+
+  .harlow_medium {
+
+      font-family: 'Samsung Sharp Sans Medium'; 
+  }
+
 /*
 1. Creating the top and bottom gaps for the modal so that content doesn't touches window's edges
 */
@@ -98,7 +132,7 @@ color: #000000 !important;
 }
 
 .popup__close{
-width: 83%;
+width: 82%;
 height: 2rem;
 
 position: fixed;
