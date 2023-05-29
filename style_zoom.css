@@ -16,7 +16,7 @@
 :root body #wrapper #image {
   width: 100vw;
   height: 100vh;
-  background-image: url("assets/images/personajes/Nazassi_azul_sRGB_8k.jpg");
+  background-image: url("assets/images/personajes/Nazassi_azul_sRGB_8k.png");
   background-size: cover;
   transform: translateX(var(--x)) translateY(var(--y)) scale(var(--scale));
   transition: ease-out 0.7s;
