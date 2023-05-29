@@ -312,6 +312,10 @@ border: 1px solid;
 border-radius: 10px;
 }
 
+.open-popup a{
+  font-family: 'Samsung Sharp Sans Regular';
+  }
+
 .page{
   padding-top: 5%;
 
