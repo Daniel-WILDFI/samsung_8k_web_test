@@ -13,7 +13,7 @@
  
 /*Text font*/
 @font-face {
-    font-family: 'Samsung Sharp Sans Regular';
+    font-family: 'Samsung Sharp Sans Regular'!important;
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Regular'), url('assets/fonts/samsungsharpsans.woff') format('woff');
@@ -21,7 +21,7 @@
     
 
     @font-face {
-    font-family: 'Samsung Sharp Sans Medium';
+    font-family: 'Samsung Sharp Sans Medium'!important;
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Medium'), url('assets/fonts/samsungsharpsans-medium.woff') format('woff');
@@ -29,7 +29,7 @@
     
 
     @font-face {
-    font-family: 'Samsung Sharp Sans Bold';
+    font-family: 'Samsung Sharp Sans Bold'!important;
     font-style: normal;
     font-weight: normal;
     src: local('Samsung Sharp Sans Bold'), url('assets/fonts/samsungsharpsans-bold.woff') format('woff');
@@ -56,7 +56,6 @@ body {
     padding: 0;
     margin: 0 auto;
     min-height: 100vh;
-    font-family: 'Yantramanav', Arial, sans-serif;
     color: #151515;
 }
 article,
@@ -386,7 +385,6 @@ p {
 }
 .hamburger-label {
     display: block;
-    font-family: 'Yantramanav', Arial;
     font-size: 16px;
     width: 100%;
     height: auto;
@@ -514,7 +512,7 @@ p {
     width: auto;
     height: auto;
     top: 0;
-    left: 0;
+    left: -12%;
 }
 .ms-nav.is-visible .height-full-viewport {
     height: 50vh;
@@ -1460,7 +1458,7 @@ footer {
         user-select: none;
     }
     .ms-btn--slider {
-        margin: 5px auto;
+        margin: 15px auto;
         border-radius: 10px;
         display: inline-block;
         letter-spacing: .15em;
@@ -1518,6 +1516,12 @@ footer {
         
         
       }
+
+      .video-docker-mobile img {
+        margin-top: 25%;
+        width: 100%;
+      }
+        
       .video-docker-mobile {
         content: "!important";
         position: absolute;
@@ -1556,5 +1560,217 @@ footer {
         -o-transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
         transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
     }
+    
+    @media only screen and (max-width: 375px) {
+        h1 {
+            font-size: calc(48px + 1vw);
+        }
+        h6 {
+            font-size: 16px;
+        }
+        blockquote {
+            margin: 0 auto 15px;
+            font-size: 1em;
+        }
+        .expanded-timeline {
+            width: 50vh;
+        }
+        .ms-nav {
+            padding-top: 1.4em;
+        }
+        .ms-navbar .ms-btn {
+            font-size: 1.4em;
+        }
+        .ms-navbar {
+            position: relative;
+            width: 100%;
+            min-height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            overflow-y: auto;
+        }
+        .nav-item {
+            display: inline-block;
+            width: auto;
+            margin-left: 0;
+        }
+        .nav-item__label {
+            display: none;
+        }
+        .ms-nav {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 1.4em;
+        }
+        .overlay {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(35%, transparent), color-stop(45%, transparent), to(rgba(0, 0, 0, 0.9)));
+            background: -o-linear-gradient(top, black 0, transparent 35%, transparent 45%, rgba(0, 0, 0, 0.9) 100%);
+            background: linear-gradient(to bottom, black 0, transparent 35%, transparent 45%, rgba(0, 0, 0, 0.9) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#c9000000', GradientType=0);
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: 50vh;
+        }
+        .swiper-button-prev {
+            padding-left: 3em;
+        }
+        .swiper-button-next {
+            padding-right: 3em;
+        }
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            width: 2em;
+        }
+        .swiper-button-prev:hover {
+            padding-left: 3em;
+        }
+        .swiper-button-prev:hover::after {
+            width: 2em;
+        }
+        .swiper-button-next:hover {
+            padding-right: 3em;
+        }
+        .swiper-button-next:hover::after {
+            width: 2em;
+        }
+        .expanded-timeline {
+            display: none;
+        }
+        .slide-inner--info {
+            width: 100%;
+            text-align: center;
+            min-height: 50px;
+            bottom: 10vh;
+            padding-left: 0;
+            color: #fff;
+            z-index: 1;
+            opacity: 0;
+            -webkit-transition: opacity 1s ease;
+            -o-transition: opacity 1s ease;
+            transition: opacity 1s ease;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .ms-btn--slider {
+            margin: 15px auto;
+            border-radius: 10px;
+            display: inline-block;
+            letter-spacing: .15em;
+            background: #fff;
+            color: #000;
+            padding: .5em 0;
+        }
+        .ms-btn--slider::before {
+            content: '';
+            display: none;
+            width: 0;
+        }
+        .ms-container {
+            padding-top: 6em;
+            padding-bottom: 3em;
+        }
+        .ms-container.home-slider {
+            padding-bottom: 0 !important;
+        }
+        .ms-section__block {
+            width: auto;
+            margin: 0 15px 3em;
+        }
+        .page-desc {
+            width: 100%;
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #151515;
+            letter-spacing: .05em;
+        }
+        .post-item,
+        .post-item:nth-child(2n) {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        #contact>div {
+            margin-bottom: 30px;
+        }
+        .ms-footer .copyright {
+            margin-left: auto;
+        }
+        .ms-footer .socials {
+            display: none;
+        }
+        .ms-logo img {
+            width: auto;
+            height: 60%;
+            margin: 10px 0px 0px 25px;
+        }
+       
+    
+        .video-docker-mobile video {
+            margin-top: 20%;
+            width: 100%;
+            
+            
+          }
+    
+          .video-docker-mobile img {
+            margin-top: 2%;
+            width: 100%;
+          }
+            
+          .video-docker-mobile {
+            content: "!important";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #000;
+            z-index: 1;
+          }
+    
+          .height-full-viewport {
+            position: fixed;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            overflow-y: auto;
+            left: 60%;
+            top: 0;
+            width: 26vh;
+            height: 0%;
+            background-color: #151515;
+            z-index: 5;
+            overflow: hidden;
+            -webkit-transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
+            -o-transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
+            transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
+        }
+
+
+    }
+
 
 }
