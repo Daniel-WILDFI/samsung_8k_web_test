@@ -12,7 +12,28 @@
  */
  
 /*Text font*/
-@import 'https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900';
+@font-face {
+    font-family: 'Samsung Sharp Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Regular'), url('assets/fonts/samsungsharpsans.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Samsung Sharp Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Medium'), url('assets/fonts/samsungsharpsans-medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Samsung Sharp Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold'), url('assets/fonts/samsungsharpsans-bold.woff') format('woff');
+    }
 
 /*Social icons font*/
 @import 'https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8';
@@ -126,7 +147,7 @@ h6 {
     text-transform: uppercase;
 }
 h1 {
-    font-size: calc(50px + 1vw);
+    font-size: calc(35px + 1vw);
 }
 h2 {
     color: #fff;
@@ -278,10 +299,9 @@ p {
 }
 .ms-btn--slider::before{
     content: '';
-    height: .1rem;
+    height: .13rem;
     width: 2rem;
     margin-right: .7rem;
-    margin-top: .7rem;
     background: #000;
     -webkit-transition: width .3s ease;
     -o-transition: width .3s ease;
@@ -476,7 +496,7 @@ p {
         -ms-flex-align: center;
             align-items: center;
     overflow-y: auto;
-    left: 0;
+    left: 87%;
     top: 0;
     width: 26vh;
     height: 0%;
@@ -538,7 +558,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0e064e;
+    background: #fff;
     height: .1rem;
     top: 50%;
     width: 0;
@@ -575,7 +595,7 @@ p {
 .nav-item:active .ms-btn,
 .nav-item:focus .ms-btn,
 .nav-item:hover .ms-btn {
-    color: #0e064e;
+    color: #fff;
     opacity: 1;
     padding-left: 2.4rem;
 }
@@ -701,7 +721,7 @@ p {
 .slide-inner--image {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100%;   
     background-size: cover;
     background-position: center;
     opacity: .2;
@@ -734,6 +754,7 @@ p {
     letter-spacing: .2em;
     line-height: 2em;
     font-size: 12px;
+    font-weight: 500;
     width: auto;
     height: 24px;
     background-image: none !important;
@@ -1508,5 +1529,32 @@ footer {
         z-index: 1;
       }
 
-    
+      .height-full-viewport {
+        position: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        overflow-y: auto;
+        left: 60%;
+        top: 0;
+        width: 26vh;
+        height: 0%;
+        background-color: #151515;
+        z-index: 5;
+        overflow: hidden;
+        -webkit-transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
+        -o-transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
+        transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
+    }
+
 }
