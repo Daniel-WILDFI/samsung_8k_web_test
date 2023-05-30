@@ -1509,6 +1509,11 @@ footer {
         z-index: 1;
       }
 
+      .mobile_off{
+        display: none;
+
+      }
+
       .height-full-viewport {
         position: fixed;
         display: -webkit-box;
@@ -1536,6 +1541,7 @@ footer {
         -o-transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
         transition: height .8s cubic-bezier(0.3, 1, 0.3, 1) .1s;
     }
+}
     
     @media only screen and (max-width: 375px) {
         h1 {
@@ -1587,7 +1593,7 @@ footer {
         .ms-nav {
             padding-left: 15px;
             padding-right: 15px;
-            padding-bottom: 1.4em;
+            padding-bottom: 0.4em;
         }
         .overlay {
             background: -o-linear-gradient(top, black 0, transparent 35%, transparent 45%, rgba(0, 0, 0, 0.9) 100%);
@@ -1723,4 +1729,3 @@ footer {
     }
 
 
-}
