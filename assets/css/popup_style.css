@@ -115,7 +115,7 @@ top: 0%;
 .popup__container{
 -webkit-box-sizing: border-box;
         box-sizing: border-box;  
-padding: 3% 30% 0% 30%;
+padding: 10% 30% 0% 30%;
 
 height: calc(100vh - 40px); /* 1 */
 margin: auto; /* 1 */
@@ -133,7 +133,7 @@ margin-top: 10%;
 --rTitleMarginBottom: 1.5rem;
 --rTitleMarginTop: 1.5rem;
 font-size: 1.5rem;
-color: #000000 !important;
+color: #fff !important;
 }
 
 .popup__close{
@@ -294,7 +294,7 @@ DEMO
 body{
 font-size: 1rem;
 color: #222;
-background-color: #000000;
+background-color: #fff;
 margin: 0;
 }
 
@@ -305,7 +305,7 @@ line-height: 1.5;
 
 p:nth-child(n+2){
 margin-top: 1rem;
-color: #000000;
+color: #fff;
 }
 
 .open-popup{
