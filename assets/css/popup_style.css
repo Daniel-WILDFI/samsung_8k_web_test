@@ -59,10 +59,10 @@ POPUP
   
 
   @font-face {
-  font-family: 'Samsung Sharp Sans Bold';
+  font-family: 'Meta Serif Book';
   font-style: bold;
   font-weight: bold;
-  src: local('Samsung Sharp Sans Bold'), url('assets/fonts/samsungsharpsans-bold.woff') format('woff');
+  src: local('Meta Serif Book'), url('assets/fonts/metaserifpro-book.woff') format('woff');
   }
 
   .harlow_regular {
@@ -73,6 +73,10 @@ POPUP
   .harlow_medium {
 
       font-family: 'Samsung Sharp Sans Medium'; 
+  }
+
+  .meta_book{
+    font-family: 'Meta Serif Book';
   }
 
 /*
@@ -115,7 +119,7 @@ top: 0%;
 .popup__container{
 -webkit-box-sizing: border-box;
         box-sizing: border-box;  
-padding: 10% 30% 0% 30%;
+padding: 5% 30% 0% 30%;
 
 height: calc(100vh - 40px); /* 1 */
 margin: auto; /* 1 */
