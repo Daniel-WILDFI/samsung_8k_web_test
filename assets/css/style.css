@@ -356,8 +356,9 @@ p {
     transition: opacity .1s;
 }
 .ms-nav {
-    padding: 1em 3em;
+    padding: 0em 3em;
     color: inherit;
+    background-color: #00000057;
 }
 
 /* 2.2 Burger button */
@@ -1369,7 +1370,7 @@ footer {
         width: 50vh;
     }
     .ms-nav {
-        padding-top: 1.4em;
+        padding-top: 0.4em;
     }
     .ms-navbar .ms-btn {
         font-size: 1.4em;
@@ -1404,39 +1405,13 @@ footer {
     .ms-nav {
         padding-left: 15px;
         padding-right: 15px;
-        padding-bottom: 1.4em;
+        padding-bottom: 0.4em;
     }
     .overlay {
         background: -o-linear-gradient(top, black 0, transparent 35%, transparent 45%, rgba(0, 0, 0, 0.9) 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(35%, transparent), color-stop(45%, transparent), to(rgba(0, 0, 0, 0.9)));
         background: linear-gradient(to bottom, black 0, transparent 35%, transparent 45%, rgba(0, 0, 0, 0.9) 100%);
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#c9000000', GradientType=0);
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-        top: 50vh;
-    }
-    .swiper-button-prev {
-        padding-left: 3em;
-    }
-    .swiper-button-next {
-        padding-right: 3em;
-    }
-    .swiper-button-prev::after,
-    .swiper-button-next::after {
-        width: 2em;
-    }
-    .swiper-button-prev:hover {
-        padding-left: 3em;
-    }
-    .swiper-button-prev:hover::after {
-        width: 2em;
-    }
-    .swiper-button-next:hover {
-        padding-right: 3em;
-    }
-    .swiper-button-next:hover::after {
-        width: 2em;
     }
     .expanded-timeline {
         display: none;
@@ -1519,17 +1494,17 @@ footer {
       }
 
       .video-docker-mobile img {
-        margin-top: 18%;
+        margin-top: 15%;
         width: 100%;
       }
         
       .video-docker-mobile {
         content: "!important";
         position: absolute;
-        width: 100%;
+        width: 114%;
         height: 100%;
         top: 0;
-        left: 0;
+        left: -38px;
         background: #000;
         z-index: 1;
       }
@@ -1577,7 +1552,7 @@ footer {
             width: 50vh;
         }
         .ms-nav {
-            padding-top: 1.4em;
+            padding-top: 0.4em;
         }
         .ms-navbar .ms-btn {
             font-size: 1.4em;
@@ -1619,32 +1594,6 @@ footer {
             background: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(35%, transparent), color-stop(45%, transparent), to(rgba(0, 0, 0, 0.9)));
             background: linear-gradient(to bottom, black 0, transparent 35%, transparent 45%, rgba(0, 0, 0, 0.9) 100%);
             filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#c9000000', GradientType=0);
-        }
-        .swiper-button-prev,
-        .swiper-button-next {
-            top: 50vh;
-        }
-        .swiper-button-prev {
-            padding-left: 3em;
-        }
-        .swiper-button-next {
-            padding-right: 3em;
-        }
-        .swiper-button-prev::after,
-        .swiper-button-next::after {
-            width: 2em;
-        }
-        .swiper-button-prev:hover {
-            padding-left: 3em;
-        }
-        .swiper-button-prev:hover::after {
-            width: 2em;
-        }
-        .swiper-button-next:hover {
-            padding-right: 3em;
-        }
-        .swiper-button-next:hover::after {
-            width: 2em;
         }
         .expanded-timeline {
             display: none;
