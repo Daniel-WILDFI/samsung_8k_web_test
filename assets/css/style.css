@@ -580,8 +580,8 @@ p {
 }
 
 .ms-nav.is-visible .height-full-viewport {
-    height: 40vh;
-    width: 26vh;
+    height: 30vh;
+    width: 20vh;
     -webkit-transition: height 1s ease;
     -o-transition: height 1s ease;
     transition: height 1s ease;
@@ -591,8 +591,8 @@ p {
     cursor: pointer;
     padding: .75em;
     opacity: 0;
-    width: 240px;
-    margin-left: 3em;
+    width: 100%;
+    margin-left: 0em;
     -webkit-transition: opacity .3s ease;
     -o-transition: opacity .3s ease;
     transition: opacity .3s ease;
