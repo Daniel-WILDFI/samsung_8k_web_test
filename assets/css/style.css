@@ -20,21 +20,26 @@
     
 
     @font-face {
-    font-family: 'Samsung Sharp Sans Bold';
-    font-style: bold;
-    font-weight: bold;
-    src: local('Samsung Sharp Sans Bold'), url('assets/fonts/samsungsharpsans-bold.woff') format('woff');
-    }
-
-    .harlow_regular {
-
-        font-family: 'Samsung Sharp Sans Regular'; 
-    }
-
-    .harlow_medium {
-
-        font-family: 'Samsung Sharp Sans Medium'; 
-    }
+        font-family: 'Meta Serif Book';
+        font-style: light;
+        font-weight: light;
+        src: local('Meta Serif Book'), url('assets/fonts/metaserifpro-book.woff') format('woff');
+        }
+      
+        .harlow_regular {
+      
+            font-family: 'Samsung Sharp Sans Regular'; 
+        }
+      
+        .harlow_medium {
+      
+            font-family: 'Samsung Sharp Sans Medium'; 
+        }
+      
+        .meta_book{
+          font-family: 'Meta Serif Book';
+        }
+      
 
 /*Social icons font*/
 @import 'https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8';
@@ -147,7 +152,7 @@ h6 {font-family: 'Samsung Sharp Sans Regular', 'Samsung Sharp Sans Medium', 'Sam
     text-transform: uppercase;
 }
 h1 {
-    font-size: calc(35px + 1vw);
+    font-size: calc(25px + 1vw);
 }
 h2 {
     color: #fff;
@@ -546,7 +551,7 @@ p {
     position: relative;
 }
 .ms-navbar .ms-btn {
-    font-size: 1.75em;
+    font-size: 1.2em;
     letter-spacing: .02em;
     color: #fff;
     font-weight: 700 !important;
@@ -842,9 +847,10 @@ p {
 }
 .slide-inner--info h1 {
     margin: 10px 0;
-    text-transform: uppercase;
+    text-transform: inherit;
     font-weight: 900;
     line-height: 1em;
+    letter-spacing: 15px;
     color: #fff;
 }
 .slide--info__link {
@@ -928,132 +934,16 @@ p {
 }
 
 /**
- * 5. Albums
+ * 5. Personajes
  */
+.ficha_personaje{
 
-.filtr-container {
-    -webkit-transition: height .5s ease-out;
-    -o-transition: height .5s ease-out;
-    transition: height .5s ease-out;
-    overflow: hidden;
+    margin: 0 auto;
+    width: 85%;
 }
-.filtr-btn {
-    display: inline-block;
-    margin-bottom: 2.4em;
-}
-.filtr-btn li {
-    cursor: pointer;
-    display: inline-block;
-    opacity: .5;
-    margin-bottom: 15px;
-    -webkit-transition: opacity .3s ease;
-    -o-transition: opacity .3s ease;
-    transition: opacity .3s ease;
-}
-.filtr-btn h6 {
-    margin-bottom: 0;
-    padding-right: 1.2em;
-}
-.filtr-btn li.active {
-    opacity: 1;
-}
-.filtr-btn li:hover {
-    opacity: 1 !important;
-}
-.album-item {
-    padding-bottom: 1.8em;
-}
-.album-item a {
-    padding-top: 60%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    z-index: 9;
-}
-.album-item__img {
-    position: absolute;
-    width: 100.5%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-position: 50% 50%;
-    background: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: -webkit-transform .3s ease;
-    transition: -webkit-transform .3s ease;
-    -o-transition: transform .3s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease, -webkit-transform .3s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.album-item__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100.5%;
-    height: 100%;
-    z-index: 2;
-    overflow: hidden;
-}
-.album-item__cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .7);
-    z-index: 1;
-    overflow: hidden;
-    opacity: 0;
-    -webkit-transition: opacity .3s ease;
-    -o-transition: opacity .3s ease;
-    transition: opacity .3s ease;
-}
-.album-item__overlay h5 {
-    position: relative;
-    color: #fff;
-    margin: 0;
-    max-width: 100%;
-    padding: 1em;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    z-index: 1;
-    -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-            transform: scale(1.5);
-    opacity: 0;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.album-item:hover .album-item__img {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-}
-.album-item:hover .album-item__cover,
-.album-item:hover .album-item__overlay h5 {
-    opacity: 1;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-}
+
+
+
 
 /**
  * 6. Gallery
@@ -1562,7 +1452,7 @@ opacity: 1;
       }
 
       .video-docker-mobile img {
-        margin-top: 45%;
+        margin-top: 25%;
         width: 100%;
       }
         
@@ -1734,7 +1624,7 @@ opacity: 1;
           }
     
           .video-docker-mobile img {
-            margin-top: 40%;
+            margin-top: 30%;
             width: 100%;
           }
             
