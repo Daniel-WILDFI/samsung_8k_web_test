@@ -99,7 +99,7 @@ ul {
 menu,
 ol,
 ul {
-    padding-top: 49px !important;
+    padding-top: 0px !important;
 }
 
 button {
@@ -581,7 +581,7 @@ p {
 
 .ms-nav.is-visible .height-full-viewport {
     height: 30vh;
-    width: 20vh;
+    width: 25vh;
     -webkit-transition: height 1s ease;
     -o-transition: height 1s ease;
     transition: height 1s ease;
@@ -1395,7 +1395,7 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     overflow-y: auto;
-    left: 67%;
+    left: 65%;
     top: 0;
     width: 26vh;
     height: 0%;
@@ -1448,7 +1448,7 @@ footer {
         text-transform: inherit;
         font-weight: 900;
         line-height: 1em;
-        letter-spacing: 1px !important;
+        letter-spacing: 6px !important;
         color: #fff;
     }
 
@@ -1467,6 +1467,11 @@ footer {
 
     .ms-nav {
         padding-top: 0.4em;
+    }
+
+    .ms-navbar a {
+        display: block;
+        font-size: .7rem;
     }
 
     .ms-navbar .ms-btn {
@@ -1495,8 +1500,8 @@ footer {
     }
 
     .ms-nav.is-visible .height-full-viewport {
-        height: 27vh;
-        width: 15vh;
+        height: 22vh;
+        width: 16vh;
         -webkit-transition: height 1s ease;
         -o-transition: height 1s ease;
         transition: height 1s ease;
@@ -1674,6 +1679,12 @@ footer {
     .ms-nav {
         padding-top: 0.4em;
     }
+
+    .ms-navbar a {
+        display: block;
+        font-size: .7rem;
+    }
+
 
     .ms-navbar .ms-btn {
         font-size: 1.4em;

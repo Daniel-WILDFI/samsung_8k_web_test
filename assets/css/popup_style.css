@@ -289,7 +289,10 @@ will-change: width, opacity;
   -ms-scroll-chaining: none;
       overscroll-behavior: contain; /* 1 */
 }
+.popup__content{
+  margin: 0% 5% 0% 5%;
 
+}
 .popup__close{
   width: 85%;
   height: 2rem;
@@ -333,8 +336,8 @@ text-decoration: none;
 text-transform: uppercase;
 padding: .35rem 1rem;
 border-left: 1px solid;
-    border-right: 1px solid;
-border-radius: 10px;
+border-right: 1px solid;
+
 }
 
 .open-popup a{
