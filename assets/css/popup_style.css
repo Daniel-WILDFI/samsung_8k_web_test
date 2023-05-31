@@ -128,8 +128,12 @@ overflow: auto; /* 1 */
     overscroll-behavior: contain; /* 1 */
 }
 
+.popup__container .popup__content h1{
+  letter-spacing: 1px;
+  }
+
 .popup__content{
-  margin: 0% 5% 0% 5%;
+  margin: 0% 8% 0% 8%;
 
 }
 
