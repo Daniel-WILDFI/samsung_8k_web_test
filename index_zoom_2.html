@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-   <!-- Metadata -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EL MARISCAL Y LA PRIMERA EN CASA</title>
   <link rel="stylesheet" href="./style_zoom_2.css">
   <!-- CSS Plugins -->
@@ -16,139 +17,149 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LY5PETPWP6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-LY5PETPWP6');
 </script>
+
 <body>
 
   <!-- Header -->
- <header class="ms-header navbar-white">
-  <nav class="ms-nav">
-    <div class="ms-logo">
-      <a href="index.html" data-type="page-transition">
-        <div class="logo-dark">
-          <img src="logo-dark.svg" alt="logo image">
-        </div>
-        <div class="logo-light current">
-          <img src="assets/images/Logo_samsung.svg" alt="logo image">
-        </div>
-      </a>
-    </div>
-    <button class="hamburger" type="button" data-toggle="navigation"> <span class="hamburger-box">
-        <span class="hamburger-label"></span>
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <div class="height-full-viewport">
-      <ul class="ms-navbar">
-        <!-- Nav Link -->
+  <header class="ms-header navbar-white">
+    <nav class="ms-nav">
+      <div class="ms-logo">
+        <a href="index.html" data-type="page-transition">
+          <div class="logo-dark">
+            <img src="logo-dark.svg" alt="logo image">
+          </div>
+          <div class="logo-light current">
+            <img src="assets/images/Logo_samsung.svg" alt="logo image">
+          </div>
+        </a>
+      </div>
+      <button class="hamburger" type="button" data-toggle="navigation"> <span class="hamburger-box">
+          <span class="hamburger-label"></span>
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="height-full-viewport">
+        <ul class="ms-navbar">
+          <!-- Nav Link -->
+          <li class="nav-item">
+            <a href="index.html" data-type="page-transition"> <span class="ms-btn harlow_medium lato_bold">INICIO</span>
+              <span class="nav-item__label" style="font-family: 'PT Serif', serif;">Vuelve al inicio</span>
+            </a>
+          </li>
+          <!-- Nav Link 
         <li class="nav-item">
           <a href="index.html" data-type="page-transition"> <span
-              class="ms-btn harlow_medium">INICIO</span>
-            <span class="nav-item__label" style="font-family: 'PT Serif', serif;">Vuelve al inicio</span>
-          </a>
-        </li>
-        <!-- Nav Link 
-        <li class="nav-item">
-          <a href="index.html" data-type="page-transition"> <span
-              class="ms-btn harlow_medium">EXIBICIÓN</span>
+              class="ms-btn harlow_medium lato_bold">EXIBICIÓN</span>
             <span class="nav-item__label" style="font-family: 'PT Serif', serif;">Descubre la muestra</span>
           </a>
         </li>-->
-        <!-- Nav Link -->
-						<li class="nav-item">
-							<a href="https://shop.samsung.com.uy/neo%20qled"
-								data-type="page-transition"> <span class="ms-btn harlow_medium lato_bold">Neo QLED 8K</span>
-								<span class="nav-item__label" style="font-family: 'PT Serif', serif;">Visita nuestra tienda</span>
-							</a>
-						</li>
-      </ul>
-    </div>
-  </nav>
-</header> 
-<!-- partial:index.partial.html -->
-<div id="root"></div> 
-<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js'></script>
-      
-   
-     
-      
-      
-      
-<script id="rendered-js" >
-function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // A part of my effort to learn parallax.
-// Photo Cred: Andre Benz @ https://unsplash.com/@trapnation
-
-class App extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "handleMouseMove",
-    e => {
-      const el = document.getElementById("wrapper");
-      const d = el.getBoundingClientRect();
-      let x = e.clientX - (d.left + Math.floor(d.width / 2));
-      let y = e.clientY - (d.top + Math.floor(d.height / 2));
-      // Invert values
-      x = x - x * 25;
-      y = y - y * 25;
-      document.documentElement.style.setProperty("--scale", 3.5);
-      document.documentElement.style.setProperty("--x", x / 10 + "px");
-
-      document.documentElement.style.setProperty("--y", y / 10 + "px");
-    });_defineProperty(this, "handleMouseLeave",
-
-    () => {
-      document.documentElement.style.setProperty("--scale", 1);
-      document.documentElement.style.setProperty("--x", 0);
-      document.documentElement.style.setProperty("--y", 0);
-    });}
-  render() {
-    return /*#__PURE__*/(
-      React.createElement("div", {
-        id: "wrapper",
-        onMouseMove: this.handleMouseMove,
-        onClick: this.handleMouseLeave }, /*#__PURE__*/
-
-      React.createElement("img", { id: "image" })));
+          <!-- Nav Link -->
+          <li class="nav-item">
+            <a href="https://shop.samsung.com.uy/neo%20qled&cid=uy_pd_social_facebook-instagram_neoqled_relanzamiento_historia-nunca-vista_boton_caso_web&utm_source=landing&utm_medium=none&utm_campaign=historia-nunca-vista&utm_term=web&utm_content=caso" data-type="page-transition" target="_blank"> <span
+                class="ms-btn harlow_medium lato_bold">Neo QLED 8K</span>
+              <span class="nav-item__label" style="font-family: 'PT Serif', serif;">Visita nuestra tienda</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- partial:index.partial.html -->
+  <div id="root"></div>
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js'></script>
 
 
-  }}
 
 
-ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("root"));
+
+
+  <script id="rendered-js">
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } // A part of my effort to learn parallax.
+    // Photo Cred: Andre Benz @ https://unsplash.com/@trapnation
+
+    class App extends React.Component {
+      constructor(...args) {
+        super(...args); _defineProperty(this, "handleMouseMove",
+          e => {
+            const el = document.getElementById("wrapper");
+            const d = el.getBoundingClientRect();
+            let x = e.clientX - (d.left + Math.floor(d.width / 2));
+            let y = e.clientY - (d.top + Math.floor(d.height / 2));
+            // Invert values
+            x = x - x * 25;
+            y = y - y * 25;
+            document.documentElement.style.setProperty("--scale", 3.5);
+            document.documentElement.style.setProperty("--x", x / 10 + "px");
+
+            document.documentElement.style.setProperty("--y", y / 10 + "px");
+          }); _defineProperty(this, "handleMouseLeave",
+
+            () => {
+              document.documentElement.style.setProperty("--scale", 1);
+              document.documentElement.style.setProperty("--x", 0);
+              document.documentElement.style.setProperty("--y", 0);
+            });
+      }
+      render() {
+        return /*#__PURE__*/(
+          React.createElement("div", {
+            id: "wrapper",
+            onMouseMove: this.handleMouseMove,
+            onClick: this.handleMouseLeave
+          }, /*#__PURE__*/
+
+            React.createElement("img", { id: "image" })));
+
+
+      }
+    }
+
+
+    ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("root"));
 //# sourceURL=pen.js
-    
-    </script>
 
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '256655758013844');
-  fbq('track', 'PageView');
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '256655758013844');
+    fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=256655758013844&ev=PageView&noscript=1"
-  /></noscript>
+      src="https://www.facebook.com/tr?id=256655758013844&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
-  
 
-  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
-<!-- partial -->
- <!-- JS Libraries -->
-    <!-- jquery-2.1.3.min js -->
-    <script type="text/javascript" src='assets/js/jquery-3.2.1.min.js'></script>
-    <!-- Vendors -->
-    <script type="text/javascript" src='assets/js/plugins.min.js'></script>
-    <!-- Main js -->
-    <script type="text/javascript" src="assets/js/main.js"></script> 
+
+  <script
+    src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+  <!-- partial -->
+  <!-- JS Libraries -->
+  <!-- jquery-2.1.3.min js -->
+  <script type="text/javascript" src='assets/js/jquery-3.2.1.min.js'></script>
+  <!-- Vendors -->
+  <script type="text/javascript" src='assets/js/plugins.min.js'></script>
+  <!-- Main js -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
+
 </html>
