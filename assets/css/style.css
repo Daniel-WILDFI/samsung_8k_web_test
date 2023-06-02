@@ -1050,6 +1050,14 @@ p {
     user-select: none;
 }
 
+.swiper-slide-active .slide-inner--info {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease 1s;
+    -o-transition: opacity 1s ease 1s;
+    transition: opacity 1s ease 1s;
+}
+
+
 .slide-inner--info-home {
     position: absolute;
     width: 25%;
@@ -1075,12 +1083,6 @@ p {
     transition: opacity 1s ease 1s;
 }
 
-.swiper-slide-active .slide-inner--info {
-    opacity: 1;
-    -webkit-transition: opacity 1s ease 1s;
-    -o-transition: opacity 1s ease 1s;
-    transition: opacity 1s ease 1s;
-}
 
 .slide-inner--info h1 {
     margin: 10px 0;
@@ -1762,7 +1764,30 @@ footer {
         margin: 10px 0px 0px 25px;
     }
 
-
+    .slide-inner--info-home {
+        position: absolute;
+        width: 32%;
+        min-height: 50px;
+        bottom: 3em;
+        padding-left: 7.28em;
+        color: #fff;
+        z-index: 1;
+        opacity: 0;
+        -webkit-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .swiper-slide-active .slide-inner--info-home {
+        opacity: 1;
+        -webkit-transition: opacity 1s ease 1s;
+        -o-transition: opacity 1s ease 1s;
+        transition: opacity 1s ease 1s;
+    }
 
     .video-docker-mobile video {
         margin-top: 20%;
