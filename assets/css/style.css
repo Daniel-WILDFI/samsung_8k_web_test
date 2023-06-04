@@ -1979,6 +1979,33 @@ footer {
         user-select: none;
     }
 
+    .slide-inner--info-home {
+        margin: 0 auto;
+        position: absolute;
+        width: 32%;
+        min-height: 50px;
+        bottom: 3em;
+        padding: 0% 34% 10% 34%;
+        color: #fff;
+        z-index: 1;
+        opacity: 0;
+        -webkit-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .swiper-slide-active .slide-inner--info-home {
+        opacity: 1;
+        -webkit-transition: opacity 1s ease 1s;
+        -o-transition: opacity 1s ease 1s;
+        transition: opacity 1s ease 1s;
+    }
+
+
     .ms-btn--slider {
         margin: 15px auto;
         border-radius: 10px;
