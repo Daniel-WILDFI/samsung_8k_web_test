@@ -852,6 +852,7 @@ p {
   .video-popup-model .video-layer .model-wrapper {
     width: 100%;
     height: auto;
+    z-index: 1;
   }
   @media screen and (min-width: 800px) {
     .video-popup-model .video-layer .model-wrapper {
